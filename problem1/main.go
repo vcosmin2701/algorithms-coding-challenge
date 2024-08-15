@@ -4,19 +4,26 @@ import "fmt"
 
 func main() {
 	n := 10
-	evenSum := 0
-
 	arr := []int{}
 
-	for i := range n {
-		arr = append(arr, i)
-	}
+	arr = generateArray(arr, n)
 
+	fmt.Printf("The sum of even nums is: %d \n", evenSumNums(arr))
+}
+
+func evenSumNums(arr []int) int {
+	sum := 0
 	for _, num := range arr {
 		if num%2 == 0 {
-			evenSum += num
+			sum += num
 		}
 	}
+	return sum
+}
 
-	fmt.Printf("The sum of even nums is: %d \n", evenSum)
+func generateArray(arr []int, size int) []int {
+	for i := range size {
+		arr = append(arr, i)
+	}
+	return arr
 }
