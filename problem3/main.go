@@ -10,13 +10,13 @@ func main() {
 	b := []int{'B', 'C', 'F'}
 	r := rCollection(a, b)
 
-	fmt.Println("Rachel collection: ", outputCollection(r))
+	fmt.Println("Rachel collection: ", castCollection(r))
 }
 
-func outputCollection(arr []int) []string {
+func castCollection(arr []int) []string {
 	charArr := []string{}
 	for _, char := range arr {
-		charArr = append(charArr, string(char))
+		charArr = append(charArr, fmt.Sprint(char))
 	}
 	return charArr
 }
