@@ -4,7 +4,8 @@ import "fmt"
 
 func main() {
 	arr := []int{'a', 'b', 'c', 'd', 'f'}
-	fmt.Printf("Missing letter: \"%s\" \n", findMissingLetter(arr))
+	s := fmt.Sprint(findMissingLetter(arr))
+	fmt.Printf("Missing letter: \"%s\" \n", s)
 }
 
 func findMissingLetter(list []int) string {
@@ -15,5 +16,5 @@ func findMissingLetter(list []int) string {
 			break
 		}
 	}
-	return string(char)
+	return fmt.Sprint(char)
 }
