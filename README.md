@@ -1,10 +1,10 @@
 ## Go Approach\n
 
-\n
-Go must be installed to run these implementations\n
-To run a problem: Go to the selected folder and call : `go run main.go`\n
-To run the tests, by default , the command : `go test` will run all the tests\n
-To run a specific test : `go test -run main_test.go` on the main file on desired problem.\n
+<br/>
+Go must be installed to run these implementations<br/>
+To run a problem: Go to the selected folder and call : `go run main.go`<br/>
+To run the tests, by default , the command : `go test` will run all the tests<br/>
+To run a specific test : `go test -run main_test.go` on the main file on desired problem.<br/>
 
 ## Problem 1
 
